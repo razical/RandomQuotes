@@ -106,11 +106,29 @@ ROOT_URLCONF = 'quoteweb.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'quoteweb.wsgi.application'
 
-TEMPLATE_DIRS = ("D:/Dragon/code/Min/Projects/quoteweb/templates"
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-)
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+
+
+# TEMPLATE_DIRS = [("D:/Dragon/code/Min/Projects/quoteweb/templates"
+#     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+#     # Always use forward slashes, even on Windows.
+#     # Don't forget to use absolute paths, not relative paths.
+# )]
 
 INSTALLED_APPS = (
     'django.contrib.auth',
