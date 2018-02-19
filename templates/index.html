@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Random Geek Quote Generator</title>
+</head>
+<body style="background-image: url({{ STATIC_URL }}images/bg.jpg); ">
+
+<div style="padding-top:5%; text-align:center" >
+<img src="{{ STATIC_URL }}images/logo.png" alt="Random Geek Quote Generator"  />
+</div>
+
+
+<div style="text-align:center; padding: 3%;">
+		<span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size:44px; font-weight:bold; line-height: 120%; color: #000000; text-shadow: 1px -2px 0px #FFFFFF; letter-spacing: -2px; ">
+			&nbsp;{{ quote.quote }}&nbsp;
+		</span>
+</div>
+	
+        
+     <div style="text-align:center;">
+		<form action="/">
+		<input type="submit" value="Next" style="height:50px; width:135px; font-family:Georgia, 'Times New Roman', Times, serif; font-size:24px; border: thick; border-color: #0099CC; background-color:#0066CC; 										border-bottom-width:thick; color:#FFFFFF;" >
+			</form>
+	</div>
+
+</body>
+</html>
